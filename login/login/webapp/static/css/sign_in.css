@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "MinSans";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sign-in,
+.sign-in * {
+  box-sizing: border-box;
+}
+.sign-in {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #ffffff;
+  width: 1920px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.header-2 {
+  background: #ffffff;
+  width: 1024px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.app-down {
+  background: #ffffff;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  left: 8px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.icon-app-download-2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  object-fit: cover;
+}
+.div {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 35px);
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sign-up {
+  background: #ffffff;
+  width: 53px;
+  height: 40px;
+  position: absolute;
+  left: 971px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.div2 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sign-in2 {
+  background: #ffffff;
+  width: 57px;
+  height: 40px;
+  position: absolute;
+  left: 914px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.nav {
+  background: #ffffff;
+  width: 1920px;
+  height: 162px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.nav-2 {
+  background: #c8eed2;
+  width: 1024px;
+  height: 145px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 73px);
+  overflow: hidden;
+}
+.nav-3 {
+  background: #ffffff;
+  width: 1024px;
+  height: 96px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.icon-market-1 {
+  width: 136px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 20px);
+  overflow: visible;
+}
+.menu-bar {
+  background: #ffffff;
+  width: 328px;
+  height: 26px;
+  position: absolute;
+  left: 696px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.sale {
+  background: #ffffff;
+  width: 88px;
+  height: 26px;
+  position: absolute;
+  left: 69px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-sale-1 {
+  width: 23.4px;
+  height: 26px;
+  position: absolute;
+  left: 14px;
+  top: calc(50% - 13px);
+  object-fit: cover;
+}
+.div3 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-shop {
+  background: #ffffff;
+  width: 79px;
+  height: 26px;
+  position: absolute;
+  left: 169px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-myshop-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.chat {
+  background: #ffffff;
+  width: 67px;
+  height: 26px;
+  position: absolute;
+  left: 261px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-chat-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 16.5px);
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.serach-bar {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #3b4890;
+  border-width: 2px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 460px;
+  height: 40px;
+  position: absolute;
+  left: 236px;
+  top: calc(50% - 20px);
+}
+.div4 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search-frame {
+  flex-shrink: 0;
+  width: 35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+}
+.search {
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 1.5px;
+  overflow: visible;
+}
+.nav-4 {
+  background: #ffffff;
+  width: 1024px;
+  height: 49px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 96px;
+  overflow: hidden;
+}
+.categori {
+  background: #ffffff;
+  width: 98px;
+  height: 35px;
+  position: absolute;
+  left: 6px;
+  top: 7px;
+  overflow: hidden;
+}
+.categori-1 {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 7.5px);
+  object-fit: cover;
+}
+.div5 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 10.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.map {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #666666;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 98px;
+  position: absolute;
+  left: calc(50% - -528px);
+  top: 202px;
+  overflow: hidden;
+}
+.map2 {
+  flex-shrink: 0;
+  width: 73.14px;
+  height: 73.14px;
+  position: relative;
+  object-fit: cover;
+}
+.div6 {
+  color: #212121;
+  text-align: center;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14.509317398071289px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  height: 61.66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  background: #ffffff;
+  width: 400px;
+  height: 738px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 202px;
+  overflow: hidden;
+}
+.login {
+  background: #ffffff;
+  width: 400px;
+  height: 55px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 190px;
+  overflow: hidden;
+}
+.div7 {
+  color: #212121;
+  text-align: center;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 32px);
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.id-filed {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #888888;
+  border-width: 1px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 400px;
+  height: 56px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 323px;
+}
+.div8 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pw-filed {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #888888;
+  border-width: 1px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 400px;
+  height: 56px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 398px;
+}
+/* 로그인 버튼 스타일 */
+button.login-button {
+  background: #3b4890;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 56px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 492px;
+  border: none;
+  cursor: pointer;
+}
+
+button.login-button .div9 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 버튼에 hover 효과 추가 */
+button.login-button:hover {
+  background-color: #2e3a73; /* 조금 더 어두운 색상 */
+}
+.login-util {
+  background: #ffffff;
+  width: 400px;
+  height: 35px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 591px;
+  overflow: hidden;
+}
+.div10 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 33px;
+  top: calc(50% - 11.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div11 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 34px);
+  top: 6px;
+  width: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div12 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 308px;
+  top: calc(50% - 11.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector-2 {
+  width: 0px;
+  height: 12px;
+  position: absolute;
+  left: 135px;
+  top: calc(50% - 5.5px);
+  overflow: visible;
+}
+.vector-3 {
+  width: 0px;
+  height: 12px;
+  position: absolute;
+  left: 282px;
+  top: calc(50% - 5.5px);
+  overflow: visible;
+}
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #212121;
+  border-width: 1px 0 0 0;
+  width: 399.01px;
+  height: 0px;
+  position: absolute;
+  left: calc(50% - 199px);
+  top: 486px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+/* 아이디와 비밀번호 인풋 필드에 대한 스타일 추가 */
+.input-id,
+.input-pw {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-family: "MinSans-Medium", sans-serif;
+  color: #666666;
+  padding: 12px 14px;
+  box-sizing: border-box;
+}
+
+.id-filed,
+.pw-filed {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #888888;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 400px;
+  height: 56px;
+  position: absolute;
+  left: calc(50% - 200px);
+}
+
+.id-filed {
+  top: 323px;
+}
+
+.pw-filed {
+  top: 398px;
+}

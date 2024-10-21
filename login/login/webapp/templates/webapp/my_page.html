@@ -1,0 +1,419 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../static/images/favicon.png">
+    <link rel="stylesheet" href="../../static/css/my_page.css">
+    <script src="../scripts/index.js"></script>
+    <title>별별마켓</title>
+    
+</head>
+<body>
+    <div class="my-page">
+        <div class="header">
+          <div class="header-2">
+            <!--앱 다운로드 아이콘-->
+            <div class="app-down">
+              <img class="icon-app-download-2" src="../../static/images/icon_app_download.png" />
+              <div class="div">앱다운로드</div>
+            </div>
+            <!--로그아웃-->
+            <div class="sign-in">
+              <form method="POST" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="div2">로그아웃</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--판매,내상점,채팅-->
+        <div class="nav">
+          <div class="nav-2">
+            <div class="nav-3">
+              <a href="{% url 'main' %}">
+                <img class="icon-market-1" src="../../static/images/icon_market.svg" />
+              </a>
+              <div class="menu-bar">
+                <div class="sale">
+                  <img class="icon-sale-1" src="../../static/images/icon-sale.png" />
+                  <a href="{% url 'product_sale' %}" class="div3">판매하기</a>
+                </div>
+                <div class="my-shop">
+                  <img class="icon-myshop-1" src="../../static/images/icon-myshop.png" />
+                  <a href="{% url 'my_page' %}" class="div3">내상점</a>
+                </div>
+                <div class="chat">
+                  <img class="icon-chat-1" src="../../static/images/icon-chat.png" />
+                  <div class="div3">채팅</div>
+                </div>
+              </div>
+              <!--상품 검색-->
+              <div class="search-bar">
+                <input class="div4" type="text" placeholder="상품명 입력" id="searchInput" />
+                <div class="search-frame">
+                  <img class="search" src="../../static/images/search.svg" id="searchButton" />
+                </div>
+              </div>
+            </div>
+            <div class="nav-4">
+              
+              <div class="dropdown">
+                <div class="dropdown-title">
+                  <span class="hamburger-menu"></span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">휴대폰</a></li>
+                  <li><a class="dropdown-item" href="#">태블릿</a></li>
+                  <li><a class="dropdown-item" href="#">웨어러블</a></li>
+                  <li><a class="dropdown-item" href="#">PC/노트북</a></li>
+                  <li><a class="dropdown-item" href="#">카메라</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--내 상품 목록-->
+        <div class="article">
+          <div class="list">
+            <div class="item-con-1">
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq0.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span">500,000</span>
+                        <span class="_500-000-span2">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq1.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span3">500,000</span>
+                        <span class="_500-000-span4">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq2.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span5">500,000</span>
+                        <span class="_500-000-span6">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq3.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span7">500,000</span>
+                        <span class="_500-000-span8">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card2">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq2"
+                    src="unsplash-ad-k-3-vu-70-deq4.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name2">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price2">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span9">500,000</span>
+                        <span class="_500-000-span10">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days2">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-con-2">
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq5.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span11">500,000</span>
+                        <span class="_500-000-span12">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq6.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span13">500,000</span>
+                        <span class="_500-000-span14">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq7.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span15">500,000</span>
+                        <span class="_500-000-span16">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq8.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span17">500,000</span>
+                        <span class="_500-000-span18">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-card3">
+                <div class="image-card">
+                  <img
+                    class="unsplash-ad-k-3-vu-70-deq"
+                    src="unsplash-ad-k-3-vu-70-deq9.png"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-name">
+                    <div class="div6">골든햄스터</div>
+                  </div>
+                  <div class="item-price">
+                    <div class="_500-000">
+                      <span>
+                        <span class="_500-000-span19">500,000</span>
+                        <span class="_500-000-span20">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="item-days">
+                    <div class="_2">2일 전</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-1">
+            <div class="article-2">
+              <div class="div7">내 상품</div>
+            </div>
+          </div>
+        </div>
+        <!--판매물품 판매중/판매완료 버튼-->
+        <div class="sale-info">
+          <div class="frame-13">
+            <button class="div8">판매중</div>
+          
+          <div class="frame-14">
+            <button class="div9">판매완료</div>
+          </div>
+        
+        <!--지도 기능-->
+        <a href="map_page.html">
+        <div class="map">
+          <img class="map2" src="../../static/images/icon_map.svg" />
+          <div class="div10">
+            우리동네
+            <br />
+            매물 보기
+          </div>
+        </div>
+        </a>
+        <!--지도 기능 끝-->
+
+        <!--상점 정보 수정-->
+        <div class="info-frame">
+          <div class="info-image">
+            <!-- 업로드 파일 선택 -->
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;" />
+            <img class="user" src="../../static/images/user.png" id="userImage" />
+          </div>
+          <!-- 상점명 텍스트 박스 -->
+          <div class="shop-name">
+            <input type="text" class="name-filed" value= >
+            
+            
+            <!-- 상점명 수정 버튼 -->
+            <button class="edit-button">상점명 수정</button>
+          </div>
+
+          <!-- 소개글 텍스트 영역 -->
+          <div class="shop-info">
+            <textarea class="info-filed"></textarea>
+            
+            
+            <!-- 소개글 수정 버튼 -->
+            <button class="edit-button2">소개글 수정</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-title">
+          <span class="hamburger-menu"></span>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">휴대폰</a></li>
+          <li><a class="dropdown-item" href="#">태블릿</a></li>
+          <li><a class="dropdown-item" href="#">웨어러블</a></li>
+          <li><a class="dropdown-item" href="#">PC/노트북</a></li>
+          <li><a class="dropdown-item" href="#">카메라</a></li>
+        </ul>
+      </div>
+      <div class = "cate">카테고리</div>
+    </div>
+
+    <script>
+      document.getElementById('userImage').addEventListener('click', function() {
+        // 이미지 클릭 시 파일 선택 창 열기
+        document.getElementById('imageUpload').click();
+      });
+    
+      document.getElementById('imageUpload').addEventListener('change', function(event) {
+        // 파일이 선택되면 실행
+        const file = event.target.files[0];
+        
+        if (file) {
+          const reader = new FileReader();
+          
+          // 파일이 로드되면 이미지 src를 업데이트
+          reader.onload = function(e) {
+            document.getElementById('userImage').src = e.target.result;
+          }
+          
+          // 파일을 읽어 미리보기 준비
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
+    
+      
+</body>
+</html>

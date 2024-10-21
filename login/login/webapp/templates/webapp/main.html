@@ -1,0 +1,288 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../static/images/favicon.png" />
+    <link rel="stylesheet" href="../../static/css/main.css" />
+    <script src="../../static/scripts/categori.js"></script>
+    <script src="../../static/scripts/search.js"></script>
+    <title>별별마켓</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="header-2">
+          <div class="app-down">
+            <img
+              class="icon-app-download-2"
+              src="../../static/images/icon_app_download.png"
+              alt="앱 다운로드 아이콘"
+            />
+            <div class="div">앱다운로드</div>
+          </div>
+
+          <div class="sign-up">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'my_page' %}" class="div3">내 정보</a>
+            <!-- 로그인 되어 있으면 '내 정보' 표시 -->
+            {% else %}
+            <a href="{% url 'sign_up' %}" class="div3">회원가입</a>
+            <!-- 디폴트로 '회원가입' 표시 -->
+            {% endif %}
+          </div>
+          <div class="sign-in">
+            {% if request.user.is_authenticated %}
+            <form method="POST" action="{% url 'logout' %}">
+              {% csrf_token %}
+              <button type="submit" class="div2">로그아웃</button>
+            </form>
+            {% else %}
+            <a href="{% url 'sign_in' %}" class="div2">로그인</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-2">
+          <div class="nav-3">
+            <a href="{% url 'main' %}">
+              <img
+                class="icon-market-1"
+                src="../../static/images/icon_market.svg"
+              />
+            </a>
+            <div class="menu-bar">
+              <div class="sale">
+                <img
+                  class="icon-sale-1"
+                  src="../../static/images/icon-sale.png"
+                />
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'product_sale' %}" class="div3">판매하기</a>
+                {% else %}
+                <a href="{% url 'sign_in' %}" class="div3">판매하기</a>
+                {% endif %}
+              </div>
+              <div class="my-shop">
+                <img
+                  class="icon-myshop-1"
+                  src="../../static/images/icon-myshop.png"
+                />
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'my_page' %}" class="div3">내상점</a>
+                {% else %}
+                <a href="{% url 'sign_in' %}" class="div3">내상점</a>
+                {% endif %}
+              </div>
+
+              <div class="chat">
+                <img
+                  class="icon-chat-1"
+                  src="../../static/images/icon-chat.png"
+                />
+                <a href="sign_in.html" class="div3">채팅</a>
+              </div>
+            </div>
+            <div class="search-bar">
+              <input
+                class="div4"
+                type="text"
+                placeholder="상품명 입력"
+                id="searchInput"
+              />
+              <div class="search-frame">
+                <img
+                  class="search"
+                  src="../../static/images/search.svg"
+                  id="searchButton"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="nav-4">
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- 슬라이드 배너 -->
+      <div class="frame-1">
+        <div class="component-1">
+          <a
+            href="https://exhibition.bunjang.co.kr/viewer/digital2410"
+            target="_blank"
+          >
+            <img class="banner1-1" src="../../static/images/banner1.png" />
+          </a>
+          <a
+            href="https://www.nike.com/kr/w/fall-collection-jackets-vests-3cj6vz50r7y"
+            target="_blank"
+          >
+            <img class="banner2-1" src="../../static/images/banner2.png" />
+          </a>
+          <a href="https://kr.stussy.com/collections/hoodies" target="_blank">
+            <img class="banner3-1" src="../../static/images/banner3.png" />
+          </a>
+          <a
+            href="https://www.uniqlo.com/kr/ko/contents/collaboration/uniqlo-u/24fw/"
+            target="_blank"
+          >
+            <img class="banner4-1" src="../../static/images/banner4.png" />
+          </a>
+        </div>
+      </div>
+      <div class="article">
+        <div class="list">
+          <div class="item-con-1">
+            <div class="item-card">
+              <div class="image-card">
+                <img
+                  class="unsplash-ad-k-3-vu-70-deq"
+                  src="../../static/imageprod/image.png"
+                />
+              </div>
+              <div class="item-info">
+                <div class="item-name">
+                  <div class="div6">골든햄스터</div>
+                </div>
+                <div class="item-price">
+                  <div class="_500-000">
+                    <span>
+                      <span class="_500-000-span">500,000</span>
+                      <span class="_500-000-span2">원</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item-days">
+                  <div class="_2">2일 전</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="image-card">
+                <img
+                  class="unsplash-ad-k-3-vu-70-deq"
+                  src="unsplash-ad-k-3-vu-70-deq1.png"
+                />
+              </div>
+              <div class="item-info">
+                <div class="item-name">
+                  <div class="div6">골든햄스터</div>
+                </div>
+                <div class="item-price">
+                  <div class="_500-000">
+                    <span>
+                      <span class="_500-000-span3">500,000</span>
+                      <span class="_500-000-span4">원</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item-days">
+                  <div class="_2">2일 전</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="image-card">
+                <img
+                  class="unsplash-ad-k-3-vu-70-deq"
+                  src="unsplash-ad-k-3-vu-70-deq2.png"
+                />
+              </div>
+              <div class="item-info">
+                <div class="item-name">
+                  <div class="div6">골든햄스터</div>
+                </div>
+                <div class="item-price">
+                  <div class="_500-000">
+                    <span>
+                      <span class="_500-000-span5">500,000</span>
+                      <span class="_500-000-span6">원</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item-days">
+                  <div class="_2">2일 전</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="image-card">
+                <img
+                  class="unsplash-ad-k-3-vu-70-deq"
+                  src="unsplash-ad-k-3-vu-70-deq3.png"
+                />
+              </div>
+              <div class="item-info">
+                <div class="item-name">
+                  <div class="div6">골든햄스터</div>
+                </div>
+                <div class="item-price">
+                  <div class="_500-000">
+                    <span>
+                      <span class="_500-000-span7">500,000</span>
+                      <span class="_500-000-span8">원</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item-days">
+                  <div class="_2">2일 전</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-card2">
+              <div class="image-card">
+                <img
+                  class="unsplash-ad-k-3-vu-70-deq2"
+                  src="unsplash-ad-k-3-vu-70-deq4.png"
+                />
+              </div>
+              <div class="item-info">
+                <div class="item-name2">
+                  <div class="div6">골든햄스터</div>
+                </div>
+                <div class="item-price2">
+                  <div class="_500-000">
+                    <span>
+                      <span class="_500-000-span9">500,000</span>
+                      <span class="_500-000-span10">원</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item-days2">
+                  <div class="_2">2일 전</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-con-2"></div>
+        </div>
+      </div>
+    </div>
+    <!--메인-->
+
+    <div class="map">
+      <div class="div8">
+        우리동네
+        <br />
+        매물 보기
+      </div>
+      <img class="map2" src="../../static/images/icon_map.svg" />
+    </div>
+    <div class="dropdown">
+      <div class="dropdown-title">
+        <span class="hamburger-menu"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">휴대폰</a></li>
+        <li><a class="dropdown-item" href="#">태블릿</a></li>
+        <li><a class="dropdown-item" href="#">웨어러블</a></li>
+        <li><a class="dropdown-item" href="#">PC/노트북</a></li>
+        <li><a class="dropdown-item" href="#">카메라</a></li>
+      </ul>
+    </div>
+    <div class = "cate">카테고리</div>
+    </div>
+  </body>
+</html>

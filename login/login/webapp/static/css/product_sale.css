@@ -1,0 +1,908 @@
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "MinSans";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-sale,
+.product-sale * {
+  box-sizing: border-box;
+}
+.product-sale {
+  background: #ffffff;
+  height: 1596px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #ffffff;
+  width: 1920px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.header-2 {
+  background: #ffffff;
+  width: 1024px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.app-down {
+  background: #ffffff;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  left: 8px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.icon-app-download-2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  object-fit: cover;
+}
+.div {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 35px);
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sign-up {
+  background: #ffffff;
+  width: 53px;
+  height: 40px;
+  position: absolute;
+  left: 971px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+/* 기본 버튼 스타일 제거 */
+button {
+  background: none; /* 기본 배경 제거 */
+  border: none; /* 기본 테두리 제거 */
+  padding: 0; /* 패딩 제거 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+/* .div2 클래스 스타일 */
+.div2 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 버튼에 대한 추가 스타일 */
+button.div2 {
+  border-radius: 4px; /* 모서리 둥글게 설정 */
+  background-color: transparent; /* 배경색 설정 */
+}
+.sign-in {
+  background: #ffffff;
+  width: 53px;
+  height: 40px;
+  position: absolute;
+  left: 914px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.nav {
+  background: #ffffff;
+  width: 1920px;
+  height: 162px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.nav-2 {
+  background: #c8eed2;
+  width: 1024px;
+  height: 145px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 73px);
+  overflow: hidden;
+}
+.nav-3 {
+  background: #ffffff;
+  width: 1024px;
+  height: 96px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.icon-market-1 {
+  width: 136px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 20px);
+  overflow: visible;
+}
+.menu-bar {
+  background: #ffffff;
+  width: 328px;
+  height: 26px;
+  position: absolute;
+  left: 696px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.sale {
+  background: #ffffff;
+  width: 88px;
+  height: 26px;
+  position: absolute;
+  left: 69px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-sale-1 {
+  width: 23.4px;
+  height: 26px;
+  position: absolute;
+  left: 14px;
+  top: calc(50% - 13px);
+  object-fit: cover;
+}
+.div3 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-shop {
+  background: #ffffff;
+  width: 79px;
+  height: 26px;
+  position: absolute;
+  left: 169px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-myshop-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.chat {
+  background: #ffffff;
+  width: 67px;
+  height: 26px;
+  position: absolute;
+  left: 261px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-chat-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 16.5px);
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.search-bar {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #3b4890;
+  border-width: 2px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 460px;
+  height: 40px;
+  position: absolute;
+  left: 236px;
+  top: calc(50% - 20px);
+}
+.div4 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  outline: none;
+}
+.search-frame {
+  flex-shrink: 0;
+  width: 35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.search {
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 1.5px;
+  overflow: visible;
+}
+.nav-4 {
+  background: #ffffff;
+  width: 1024px;
+  height: 49px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 96px;
+  overflow: hidden;
+}
+.categori {
+  background: #ffffff;
+  width: 98px;
+  height: 35px;
+  position: absolute;
+  left: 6px;
+  top: 7px;
+  overflow: hidden;
+}
+.categori-1 {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 7.5px);
+  object-fit: cover;
+}
+.div5 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 10.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-16 {
+  background: #ffffff;
+  width: 1024px;
+  height: 43px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 202px;
+  overflow: hidden;
+}
+.product-wrap {
+  background: #ffffff;
+  width: 1920px;
+  height: 1339px;
+  position: absolute;
+  left: calc(50% - 961px);
+  top: 257px;
+  overflow: hidden;
+}
+.product-info {
+  background: #ffffff;
+  width: 1024px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.div6 {
+  color: #191919;
+  text-align: center;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #212121;
+  border-width: 1px 0 0 0;
+  width: 1024px;
+  height: 0px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 100px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.product-group {
+  background: #ffffff;
+  width: 1024px;
+  height: 312px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.product-label {
+  background: #ffffff;
+  width: 168px;
+  height: 247px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 40px;
+  overflow: hidden;
+}
+.div7 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-list {
+  background: #ffffff;
+  width: 856px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 344px);
+  top: 40px;
+  overflow: hidden;
+}
+.camera {
+  background: #f8f8f8;
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 1px;
+  padding: 41px 65px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 428px);
+  top: 0px;
+  cursor: pointer;
+}
+
+.camera-1 {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer; /* 카메라 이미지에도 클릭 가능 표시 */
+}
+
+.product-group-2 {
+  background: #ffffff;
+  width: 1024px;
+  height: 112px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 412px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.product-label-2 {
+  background: #ffffff;
+  width: 168px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 32px;
+  overflow: hidden;
+}
+.div8 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 84px);
+  top: 12px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-input {
+  background: rgba(248, 248, 248, 0.13);
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 1px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 799px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 344px);
+  top: 32px;
+}
+.div9 {
+  color: #383838;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.categori-group {
+  background: #ffffff;
+  width: 1024px;
+  height: 112px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 524px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.categori2 {
+  background: #ffffff;
+  width: 168px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 32px;
+  overflow: hidden;
+}
+.div10 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 84px);
+  top: 12px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.categori-section {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 1px;
+  width: 153px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 344px);
+  top: 32px;
+  overflow: hidden;
+}
+.div11 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 60.5px);
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-group-3 {
+  background: #ffffff;
+  width: 1024px;
+  height: 328px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 636px;
+  overflow: hidden;
+}
+.product-label-3 {
+  background: #ffffff;
+  width: 168px;
+  height: 260px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.div12 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 84px);
+  top: 9px;
+  width: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-input-2 {
+  background: rgba(248, 248, 248, 0.13);
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 1px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 799px;
+  height: 260px;
+  position: absolute;
+  left: calc(50% - 344px);
+  top: 0px;
+}
+
+.product-input-2 textarea {
+  width: 100%;
+  height: 100%; /* 텍스트 박스가 부모 요소 크기에 맞게 확장되도록 */
+  resize: none; /* 크기 조정 불가 */
+}
+.price-frame {
+  background: #ffffff;
+  width: 1024px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 964px;
+  overflow: hidden;
+}
+.div13 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 17px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.line-12 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #212121;
+  border-width: 1px 0 0 0;
+  width: 1024px;
+  height: 0px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 1064px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.price-frame2 {
+  background: #c4e3f6;
+  width: 1024px;
+  height: 108px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 1064px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.price-frame-2 {
+  background: #ffffff;
+  width: 168px;
+  height: 108px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.div14 {
+  color: #191919;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 12px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.price-frame-3 {
+  background: #ffffff;
+  width: 856px;
+  height: 108px;
+  position: absolute;
+  left: 168px;
+  top: 0px;
+  overflow: hidden;
+}
+.price-input {
+  background: rgba(248, 248, 248, 0.13);
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 1px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 300px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 428px);
+  top: 30px;
+}
+.footer {
+  background: #ffffff;
+  width: 1024px;
+  height: 88px;
+  position: absolute;
+  left: 448px;
+  top: 1172px;
+  overflow: hidden;
+}
+.product-register {
+  background: #3b4890;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 56px;
+  position: absolute;
+  left: calc(50% - -352px);
+  top: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button.product-register:hover {
+  background-color: #2e3a73; /* 조금 더 어두운 색상 */
+}
+.div15 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.map {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #666666;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 98px;
+  position: absolute;
+  left: calc(50% - -527px);
+  top: 202px;
+  overflow: hidden;
+}
+.map2 {
+  flex-shrink: 0;
+  width: 73.14px;
+  height: 73.14px;
+  position: relative;
+  object-fit: cover;
+}
+.div16 {
+  color: #212121;
+  text-align: center;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14.509317398071289px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  height: 61.66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*카테고리 드롭다운*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute; /* 절대 위치 설정 */
+  left: calc(50% - 512px); /* 왼쪽 위치 */
+  top: 150px; /* 상단 위치 */
+}
+
+.cate {
+  position: relative;
+  display: inline-block;
+  position: absolute; /* 절대 위치 설정 */
+  left: calc(50% - 460px); /* 왼쪽 위치 */
+  top: 150px; /* 상단 위치 */
+}
+
+.dropdown-menu {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  top: 100%; /* 햄버거 메뉴 아래에 표시되도록 */
+  left: 0;
+  z-index: 1100;
+  width: 200px; /* 박스의 너비를 조정 */
+  padding: 20px; /* 드롭다운 박스 내부의 패딩 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  border: 1px solid #ccc; /* 테두리 추가 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  transition: opacity 0.3s ease; /* 부드러운 표시 효과 */
+  opacity: 0; /* 기본적으로 숨김 (투명하게) */
+}
+
+.dropdown-item {
+  padding: 10px 15px; /* 각 메뉴 아이템의 패딩(상하, 좌우) */
+  margin-bottom: 5px; /* 각 메뉴 아이템 사이 간격 */
+  display: block; /* 블록 형태로 설정 */
+  text-decoration: none; /* 링크에 밑줄 없애기 */
+  color: #333; /* 기본 텍스트 색상 */
+  background-color: #f8f8f8; /* 기본 배경색 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  transition: background-color 0.3s, transform 0.2s; /* 부드러운 배경색 변화 및 약간의 크기 변화 효과 */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* 마우스 오버 시 보임 */
+  opacity: 1; /* 불투명하게 설정 */
+}
+.dropdown-item:hover {
+  background-color: #e0e0e0; /* 호버 시 배경색 변경 */
+  color: #000; /* 호버 시 텍스트 색상 변경 */
+  transform: scale(1.02); /* 호버 시 약간 확대 */
+}
+
+/* 햄버거 메뉴 스타일 */
+.hamburger-menu {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #333;
+  left: 0;
+}
+
+.hamburger-menu::before {
+  top: -9px; /* 첫 번째 선 */
+}
+
+.hamburger-menu::after {
+  top: 9px; /* 세 번째 선 */
+}
+
+.dropdown-title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0; /* 드롭다운 타이틀 배경색 */
+  border-radius: 4px; /* 드롭다운 타이틀 모서리 둥글게 */
+  transition: background-color 0.3s; /* 부드러운 배경색 변화 효과 */
+}
+
+.dropdown-title:hover {
+  background-color: #e0e0e0; /* 드롭다운 타이틀 호버 시 색상 변경 */
+}
+.info-image {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #888888;
+  border-width: 0.5px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.user {
+  border-radius: 0%;
+  width: 157px;
+  height: 157px;
+  position: absolute;
+  left: calc(50% - 78.5px);
+  top: calc(50% - 78px);
+  object-fit: cover;
+  cursor: pointer;
+}

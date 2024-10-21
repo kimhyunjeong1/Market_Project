@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../static/images/favicon.png" />
+    <link rel="stylesheet" href="../../static/css/sign_up.css" />
+
+    <title>별별마켓</title>
+  </head>
+  <body>
+    <div class="sign-up">
+      <form action="{% url 'sign_up' %}" method="POST">
+        <!-- URL명은 적절한 URL로 수정해야 합니다. -->
+        {% csrf_token %}
+        <!-- CSRF 보호를 위한 토큰 추가 -->
+        <div class="header">
+          <div class="header-2">
+            <div class="app-down">
+              <img
+                class="icon-app-download-2"
+                src="../../static/images/icon_app_download.png"
+              />
+              <div class="div">앱다운로드</div>
+            </div>
+            <div class="sign-up2">
+              <a href="{% url 'sign_up' %}" class="div3">회원가입</a>
+            </div>
+            <div class="sign-in">
+              <a href="{% url 'sign_in' %}" class="div2">로그인</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="nav-2">
+            <div class="nav-3">
+              <a href="{% url 'main' %}">
+                <img class="icon-market-1" src="../../static/images/icon_market.svg" />
+              <div class="menu-bar">
+                <div class="sale">
+                  <img
+                    class="icon-sale-1"
+                    src="../../static/images/icon-sale.png"
+                  />
+                  <a href="sign_in.html" class="div3">판매하기</a>
+                </div>
+                <div class="my-shop">
+                  <img
+                    class="icon-myshop-1"
+                    src="../../static/images/icon-myshop.png"
+                  />
+                  <a href="sign_in.html" class="div3">내상점</a>
+                </div>
+                <div class="chat">
+                  <img
+                    class="icon-chat-1"
+                    src="../../static/images/icon-chat.png"
+                  />
+                  <a href="sign_in.html" class="div3">채팅</a>
+                </div>
+              </div>
+              <div class="serach-bar">
+                <div class="div4">상품명 입력</div>
+                <div class="search-frame">
+                  <img class="search" src="../../static/images/search.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="nav-4">
+              <div class="categori">
+                <img
+                  class="categori-1"
+                  src="../../static/images/categori.png"
+                />
+                <div class="div5">카테고리</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signup-form">
+          <div class="sing-up">
+            <div class="div7">회원가입</div>
+          </div>
+          <div class="id-filed">
+            <div class="div8">아이디</div>
+          </div>
+          <div class="id-form">
+            <div class="id-input">
+              <input
+                type="text"
+                class="_4-16"
+                name="username"
+                placeholder="(영문/숫자, 4~16자)"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="pw-filed">
+            <div class="div8">비밀번호</div>
+          </div>
+          <div class="pw-form">
+            <div class="pw-input">
+              <input
+                type="password"
+                class="_8-16"
+                name="password"
+                placeholder="(영문/숫자, 8~16자)"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="pw-filed-2">
+            <div class="div8">비밀번호 확인</div>
+          </div>
+          <div class="pw-form-2">
+            <input
+              type="password"
+              class="pw-input-2"
+              name="password_confirm"
+              required
+            />
+          </div>
+
+          <div class="name-filed">
+            <div class="div8">이름</div>
+          </div>
+          <div class="name-form">
+            <input type="text" class="pw-input-2" name="name" required />
+          </div>
+
+          <div class="addr-filed">
+            <div class="div8">주소</div>
+          </div>
+          <div class="addr-form">
+            <input
+              type="text"
+              id="sample6_postcode"
+              name="postcode"
+              placeholder="우편번호"
+              required
+            />
+            <input
+              type="button"
+              onclick="sample6_execDaumPostcode()"
+              value="우편번호 찾기"
+              class="custom-button"
+            /><br />
+            <input
+              type="text"
+              id="sample6_address"
+              name="address"
+              placeholder="주소"
+              required
+            /><br />
+            <input
+              type="text"
+              id="sample6_detailAddress"
+              name="detail_address"
+              placeholder="상세주소"
+              required
+            />
+            <input
+              type="text"
+              id="sample6_extraAddress"
+              name="extra_address"
+              placeholder="참고항목"
+            />
+          </div>
+
+          <div class="phone-filed">
+            <div class="div8">휴대전화</div>
+          </div>
+          <div class="phone-form">
+            <input type="text" name="phone" placeholder="휴대전화" required />
+          </div>
+
+          <div class="email-filed">
+            <div class="div8">이메일</div>
+          </div>
+          <div class="name-form2">
+            <input type="email" name="email" required />
+          </div>
+
+          <div class="frame-9">
+            <button type="submit" class="signup-button">
+              <div class="div10">회원가입</div>
+            </button>
+            <button
+              type="button"
+              class="cancel-button"
+              onclick="window.location.href='sign_in.html'"
+            >
+              <div class="div10">취소</div>
+            </button>
+          </div>
+          <div class="line-12"></div>
+        </div>
+      </form>
+    </div>
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+      function sample6_execDaumPostcode() {
+        new daum.Postcode({
+          oncomplete: function (data) {
+            var addr = "";
+            var extraAddr = "";
+            if (data.userSelectedType === "R") {
+              addr = data.roadAddress;
+            } else {
+              addr = data.jibunAddress;
+            }
+            if (data.userSelectedType === "R") {
+              if (data.bname !== "" && /[동|로|가]$/g.test(data.bname)) {
+                extraAddr += data.bname;
+              }
+              if (data.buildingName !== "" && data.apartment === "Y") {
+                extraAddr +=
+                  extraAddr !== ""
+                    ? ", " + data.buildingName
+                    : data.buildingName;
+              }
+              if (extraAddr !== "") {
+                extraAddr = " (" + extraAddr + ")";
+              }
+              document.getElementById("sample6_extraAddress").value = extraAddr;
+            } else {
+              document.getElementById("sample6_extraAddress").value = "";
+            }
+            document.getElementById("sample6_postcode").value = data.zonecode;
+            document.getElementById("sample6_address").value = addr;
+            document.getElementById("sample6_detailAddress").focus();
+          },
+        }).open();
+      }
+    </script>
+  </body>
+</html>

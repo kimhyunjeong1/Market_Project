@@ -1,0 +1,313 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../static/images/favicon.png" />
+    <link rel="stylesheet" href="../../static/css/product_sale.css" />
+    <script src="../../static/scripts/file_upload.js"></script>
+
+    <title>별별마켓</title>
+  </head>
+  <body>
+    <div class="product-sale">
+      <div class="header">
+        <div class="header-2">
+          <div class="app-down">
+            <!--앱 다운로드 아이콘-->
+            <img
+              class="icon-app-download-2"
+              src="../../static/images/icon_app_download.png"
+            />
+            <div class="div">앱다운로드</div>
+          </div>
+          <!--로그인,회원가입-->
+          <div class="sign-up">
+            <a href="{% url 'my_page' %}" class="div3">내 정보</a>
+          </div>
+          <div class="sign-in">
+            <form method="POST" action="{% url 'logout' %}">
+              {% csrf_token %}
+              <button type="submit" class="div2">로그아웃</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--판매,내상점,채팅-->
+      <div class="nav">
+        <div class="nav-2">
+          <div class="nav-3">
+            <a href="{% url 'main' %}">
+              <img
+                class="icon-market-1"
+                src="../../static/images/icon_market.svg"
+              />
+            </a>
+            <div class="menu-bar">
+              <a href="product_sale.html">
+                <div class="sale">
+                  <img
+                    class="icon-sale-1"
+                    src="../../static/images/icon-sale.png"
+                  />
+                  <a href="{% url 'product_sale' %}" class="div3">판매하기</a>
+                </div>
+              </a>
+              <a href="my_page.html">
+                <div class="my-shop">
+                  <img
+                    class="icon-myshop-1"
+                    src="../../static/images/icon-myshop.png"
+                  />
+                  <a href="{% url 'my_page' %}" class="div3">내상점</a>
+                </div>
+              </a>
+              <div class="chat">
+                <img
+                  class="icon-chat-1"
+                  src="../../static/images/icon-chat.png"
+                />
+                <div class="div3">채팅</div>
+              </div>
+            </div>
+            <!--상품 검색-->
+            <div class="search-bar">
+              <input
+                class="div4"
+                type="text"
+                placeholder="상품명 입력"
+                id="searchInput"
+              />
+              <div class="search-frame">
+                <img
+                  class="search"
+                  src="../../static/images/search.svg"
+                  id="searchButton"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="nav-4"></div>
+        </div>
+      </div>
+      <div class="frame-16"></div>
+      <div class="product-wrap">
+        <div class="product-info">
+          <div class="div6">상품정보</div>
+        </div>
+        <div class="line-1"></div>
+        <div class="product-group">
+          <div class="product-label">
+            <div class="div7">상품이미지</div>
+          </div>
+
+          <!-- 파일 업로드 -->
+
+          <div class="product-list">
+            <div class="info-image">
+              <!-- 업로드 파일 선택 -->
+              <input
+                type="file"
+                id="imageUpload"
+                accept="image/*"
+                style="display: none"
+              />
+              <img
+                class="user"
+                src="../../static/images/user.png"
+                id="userImage"
+              />
+            </div>
+
+            <!-- 선택한 파일 목록을 표시할 영역 -->
+          </div>
+        </div>
+        <div class="product-group-2">
+          <div class="product-label-2">
+            <div class="div8">상품명</div>
+          </div>
+          <div class="product-input">
+            <input
+              type="text"
+              class="div9"
+              placeholder="상품명을 입력해 주세요"
+            />
+          </div>
+        </div>
+        <div class="categori-group">
+          <div class="categori2">
+            <!--카테고리 자동선택-->
+            <div class="div10">카테고리</div>
+          </div>
+          <div class="categori-section">
+            <div class="div11" id="selectedCategory"></div>
+            <!-- 선택된 카테고리 표시 -->
+          </div>
+
+          <!--카테고리 직접 선택-->
+          <div class="categori-dropdown">
+            <select id="categoryDropdown">
+              <option value="" disabled selected>카테고리</option>
+              <option value="휴대폰">휴대폰</option>
+              <option value="태블릿">태블릿</option>
+              <option value="웨어러블">웨어러블</option>
+              <option value="PC/노트북">PC/노트북</option>
+              <option value="카메라">카메라</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-group-3">
+          <div class="product-label-3">
+            <div class="div12">설명</div>
+          </div>
+          <div class="product-input-2">
+            <textarea
+              class="div9"
+              placeholder="상품에 대한 정보를 기재해 주세요"
+            ></textarea>
+          </div>
+        </div>
+        <div class="price-frame">
+          <div class="div13">가격</div>
+        </div>
+        <div class="line-12"></div>
+        <div class="price-frame2">
+          <div class="price-frame-2">
+            <div class="div14">가격</div>
+          </div>
+          <div class="price-frame-3">
+            <div class="price-input">
+              <input
+                type="text"
+                class="div9"
+                id="priceInput"
+                placeholder="가격을 입력해 주세요"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="product-register">
+            <div class="div15">등록하기</div>
+          </button>
+        </div>
+      </div>
+
+      <!--지도 기능-->
+      <a href="map_page.html">
+        <div class="map">
+          <img class="map2" src="../../static/images/icon_map.svg" />
+          <div class="div16">
+            우리동네
+            <br />
+            매물 보기
+          </div>
+        </div>
+      </a>
+      <!--지도 기능 끝-->
+
+      <!--카테고리 목록-->
+      <div class="dropdown">
+        <div class="dropdown-title">
+          <span class="hamburger-menu"></span>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">휴대폰</a></li>
+          <li><a class="dropdown-item" href="#">태블릿</a></li>
+          <li><a class="dropdown-item" href="#">웨어러블</a></li>
+          <li><a class="dropdown-item" href="#">PC/노트북</a></li>
+          <li><a class="dropdown-item" href="#">카메라</a></li>
+        </ul>
+      </div>
+      <div class="cate">카테고리</div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fileInput = document.getElementById("imageFileOpenInput");
+        const cameraIcon = document.getElementById("cameraIcon");
+        const fileNamesDisplay = document.getElementById("fileNames");
+
+        // 이미지 클릭 시 파일 입력 창 열기
+        cameraIcon.addEventListener("click", function () {
+          fileInput.click();
+        });
+
+        // 파일 선택 시 파일 목록 표시하기
+        fileInput.addEventListener("change", function (event) {
+          const fileList = event.target.files; // 선택된 파일 리스트
+          fileNamesDisplay.innerHTML = ""; // 이전 목록 지우기
+
+          // 최대 5개 파일만 표시
+          const filesToShow = Array.from(fileList).slice(0, 5); // 최대 5개 파일 선택
+          filesToShow.forEach((file) => {
+            const fileNameElement = document.createElement("div"); // 파일 이름을 표시할 div 생성
+            fileNameElement.textContent = file.name; // 파일 이름을 설정
+            fileNamesDisplay.appendChild(fileNameElement); // div에 추가
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("userImage")
+        .addEventListener("click", function () {
+          // 이미지 클릭 시 파일 선택 창 열기
+          document.getElementById("imageUpload").click();
+        });
+
+      document
+        .getElementById("imageUpload")
+        .addEventListener("change", function (event) {
+          // 파일이 선택되면 실행
+          const file = event.target.files[0];
+
+          if (file) {
+            const reader = new FileReader();
+
+            // 파일이 로드되면 이미지 src를 업데이트
+            reader.onload = function (e) {
+              document.getElementById("userImage").src = e.target.result;
+            };
+
+            // 파일을 읽어 미리보기 준비
+            reader.readAsDataURL(file);
+          }
+        });
+    </script>
+    <!--가격 입력 시 셋째자리 마다 콤마 적용-->
+    <script>
+      document
+        .getElementById("priceInput")
+        .addEventListener("input", function (event) {
+          let input = event.target.value;
+
+          // 기존 콤마 제거
+          input = input.replace(/,/g, "");
+
+          // 숫자만 입력되도록 필터링
+          if (!isNaN(input) && input !== "") {
+            // 셋째 자리마다 콤마 추가
+            event.target.value = Number(input).toLocaleString();
+          } else {
+            // 숫자가 아닌 값이 입력되면 초기화
+            event.target.value = "";
+          }
+        });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryDropdown = document.getElementById("categoryDropdown");
+        const selectedCategoryDisplay =
+          document.getElementById("selectedCategory");
+
+        categoryDropdown.addEventListener("change", function () {
+          // 선택된 카테고리 값을 가져와서 div에 표시
+          const selectedCategory = categoryDropdown.value;
+          selectedCategoryDisplay.textContent = selectedCategory;
+        });
+      });
+    </script>
+  </body>
+</html>

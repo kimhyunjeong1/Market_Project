@@ -1,0 +1,1077 @@
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "MinSans";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main,
+.main * {
+  box-sizing: border-box;
+}
+.main {
+  background: #ffffff;
+  height: 2094px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #ffffff;
+  width: 1920px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.header-2 {
+  background: #ffffff;
+  width: 1024px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.app-down {
+  background: #ffffff;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  left: 8px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.icon-app-download-2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  object-fit: cover;
+}
+.div {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 35px);
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search-bar {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #3b4890;
+  border-width: 2px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 460px;
+  height: 40px;
+  position: absolute;
+  left: 236px;
+  top: calc(50% - 20px);
+}
+.sign-up {
+  background: #ffffff;
+  width: 53px;
+  height: 40px;
+  position: absolute;
+  left: 971px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+/* 기본 버튼 스타일 제거 */
+button {
+  background: none; /* 기본 배경 제거 */
+  border: none; /* 기본 테두리 제거 */
+  padding: 0; /* 패딩 제거 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+/* .div2 클래스 스타일 */
+.div2 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 버튼에 대한 추가 스타일 */
+button.div2 {
+  border-radius: 4px; /* 모서리 둥글게 설정 */
+  background-color: transparent; /* 배경색 설정 */
+}
+
+.sign-in {
+  background: #ffffff;
+  width: 57px;
+  height: 40px;
+  position: absolute;
+  left: 914px;
+  top: calc(50% - 20px);
+  overflow: hidden;
+}
+.nav {
+  background: #ffffff;
+  width: 1920px;
+  height: 162px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.nav-2 {
+  background: #c8eed2;
+  width: 1024px;
+  height: 145px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: calc(50% - 73px);
+  overflow: hidden;
+}
+.nav-3 {
+  background: #ffffff;
+  width: 1024px;
+  height: 96px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.icon-market-1 {
+  width: 136px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 20px);
+  overflow: visible;
+}
+.menu-bar {
+  background: #ffffff;
+  width: 328px;
+  height: 26px;
+  position: absolute;
+  left: 696px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.sale {
+  background: #ffffff;
+  width: 88px;
+  height: 26px;
+  position: absolute;
+  left: 69px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-sale-1 {
+  width: 23.4px;
+  height: 26px;
+  position: absolute;
+  left: 14px;
+  top: calc(50% - 13px);
+  object-fit: cover;
+}
+.div3 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-shop {
+  background: #ffffff;
+  width: 79px;
+  height: 26px;
+  position: absolute;
+  left: 169px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-myshop-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.chat {
+  background: #ffffff;
+  width: 67px;
+  height: 26px;
+  position: absolute;
+  left: 261px;
+  top: calc(50% - 13px);
+  overflow: hidden;
+}
+.icon-chat-1 {
+  width: 23.2px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 16.5px);
+  top: calc(50% - 12px);
+  object-fit: cover;
+}
+.serach-bar {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #3b4890;
+  border-width: 2px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 460px;
+  height: 40px;
+  position: absolute;
+  left: 236px;
+  top: calc(50% - 20px);
+}
+.div4 {
+  color: #666666;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  outline: none;
+}
+.search-frame {
+  flex-shrink: 0;
+  width: 35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+}
+.search {
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 1.5px;
+  overflow: visible;
+}
+.nav-4 {
+  background: #ffffff;
+  width: 1024px;
+  height: 49px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 96px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.div5 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 10.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/*배너관련 시작*/
+/* 기본 프레임 설정 */
+.frame-1 {
+  background: linear-gradient(to left, #c4e3f6, #c4e3f6);
+  width: 1024px;
+  height: 230px;
+  position: absolute;
+  left: calc(50% - 512px); /* 가운데 정렬 */
+  top: 202px; /* 기존 배너와 같은 위치 */
+  overflow: hidden;
+  z-index: 900;
+}
+
+.component-1 {
+  display: flex;
+  width: 4096px; /* 배너 이미지 4개가 포함된 전체 너비 */
+  animation: slide 12s infinite; /* 12초 동안 슬라이드, 무한 반복 */
+}
+
+.component-1 img {
+  width: 1024px; /* 각 배너 이미지의 너비 */
+  height: 230px;
+  object-fit: cover;
+}
+
+/* 슬라이드 애니메이션 */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* 첫 번째 이미지 */
+  }
+  25% {
+    transform: translateX(-1024px); /* 두 번째 이미지 */
+  }
+  50% {
+    transform: translateX(-2048px); /* 세 번째 이미지 */
+  }
+  75% {
+    transform: translateX(-3072px); /* 네 번째 이미지 */
+  }
+  100% {
+    transform: translateX(0); /* 첫 번째 이미지로 돌아옴 */
+  }
+}
+
+/* 마우스를 올렸을 때 슬라이드 애니메이션 멈추기 */
+.frame-1:hover .component-1 {
+  animation-play-state: paused;
+}
+
+/*배너관련 끝*/
+.article {
+  background: #ffffff;
+  width: 1920px;
+  height: 1615px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 484px;
+  overflow: hidden;
+}
+.list {
+  background: #ffffff;
+  width: 1024px;
+  height: 1798px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 60px;
+  overflow: hidden;
+}
+.item-con-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 1024px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 4px;
+}
+.item-card {
+  background: #dee8ff;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 189px;
+  position: relative;
+  overflow: hidden;
+}
+.image-card {
+  background: #ff8d9a;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 201px;
+  position: relative;
+  overflow: hidden;
+}
+.unsplash-ad-k-3-vu-70-deq {
+  width: 187px;
+  height: 201px;
+  position: absolute;
+  left: calc(50% - 93.5px);
+  top: 0px;
+  object-fit: cover;
+}
+.item-info {
+  background: #ffffff;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 72px;
+  position: relative;
+  overflow: hidden;
+}
+.item-name {
+  background: #ffffff;
+  width: 175px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - 87.5px);
+  top: calc(50% - 30px);
+  overflow: hidden;
+}
+.div6 {
+  color: #212121;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 87.5px);
+  top: calc(50% - 9px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-price {
+  background: #ffffff;
+  width: 124px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - 87.5px);
+  top: calc(50% - -4px);
+  overflow: hidden;
+}
+._500-000 {
+  color: #212121;
+  text-align: left;
+  position: absolute;
+  left: calc(50% - 62px);
+  top: calc(50% - 10px);
+  width: 121px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._500-000-span {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span2 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-days {
+  background: #ffffff;
+  width: 45px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - -42.5px);
+  top: calc(50% - -4px);
+  overflow: hidden;
+}
+._2 {
+  color: #888888;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 7px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+}
+._500-000-span3 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span4 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span5 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span6 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span7 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span8 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-card2 {
+  background: #dee8ff;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 186px;
+  position: relative;
+  overflow: hidden;
+}
+.unsplash-ad-k-3-vu-70-deq2 {
+  width: 187px;
+  height: 201px;
+  position: absolute;
+  left: calc(50% - 94px);
+  top: 0px;
+  object-fit: cover;
+}
+.item-name2 {
+  background: #ffffff;
+  width: 175px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - 88px);
+  top: calc(50% - 30px);
+  overflow: hidden;
+}
+.item-price2 {
+  background: #ffffff;
+  width: 124px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - 88px);
+  top: calc(50% - -4px);
+  overflow: hidden;
+}
+._500-000-span9 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span10 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-days2 {
+  background: #ffffff;
+  width: 45px;
+  height: 26px;
+  position: absolute;
+  left: calc(50% - -42px);
+  top: calc(50% - -4px);
+  overflow: hidden;
+}
+.item-con-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 1025px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 301px;
+}
+._500-000-span11 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span12 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span13 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span14 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span15 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span16 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span17 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span18 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-card3 {
+  background: #dee8ff;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 187px;
+  position: relative;
+  overflow: hidden;
+}
+._500-000-span19 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span20 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-con-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 511px);
+  top: 598px;
+}
+._500-000-span21 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span22 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span23 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span24 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span25 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span26 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span27 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span28 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span29 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span30 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-con-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 1024px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 894px;
+}
+._500-000-span31 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span32 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span33 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span34 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span35 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span36 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span37 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span38 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span39 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span40 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-con-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 1024px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 1190px;
+}
+._500-000-span41 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span42 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span43 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span44 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span45 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span46 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span47 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span48 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+._500-000-span49 {
+  color: #212121;
+  font-family: "MinSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+._500-000-span50 {
+  color: #212121;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.article-1 {
+  background: #ffffff;
+  width: 1920px;
+  height: 60px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+  overflow: hidden;
+}
+.article-2 {
+  background: #ffffff;
+  width: 1024px;
+  height: 60px;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 0px;
+  overflow: hidden;
+}
+.div7 {
+  color: #000000;
+  text-align: left;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.map {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #666666;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 98px;
+  position: absolute;
+  left: calc(50% - -528px);
+  top: 202px;
+  overflow: hidden;
+}
+.map2 {
+  flex-shrink: 0;
+  width: 73.14px;
+  height: 73.14px;
+  position: relative;
+  object-fit: cover;
+}
+.div8 {
+  color: #212121;
+  text-align: center;
+  font-family: "MinSans-Medium", sans-serif;
+  font-size: 14.509317398071289px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  height: 61.66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*카테고리 드롭다운*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute; /* 절대 위치 설정 */
+  left: calc(50% - 512px); /* 왼쪽 위치 */
+  top: 150px; /* 상단 위치 */
+}
+
+.cate {
+  position: relative;
+  display: inline-block;
+  position: absolute; /* 절대 위치 설정 */
+  left: calc(50% - 460px); /* 왼쪽 위치 */
+  top: 150px; /* 상단 위치 */
+}
+
+.dropdown-menu {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  top: 100%; /* 햄버거 메뉴 아래에 표시되도록 */
+  left: 0;
+  z-index: 1100;
+  width: 200px; /* 박스의 너비를 조정 */
+  padding: 20px; /* 드롭다운 박스 내부의 패딩 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  border: 1px solid #ccc; /* 테두리 추가 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  transition: opacity 0.3s ease; /* 부드러운 표시 효과 */
+  opacity: 0; /* 기본적으로 숨김 (투명하게) */
+}
+
+.dropdown-item {
+  padding: 10px 15px; /* 각 메뉴 아이템의 패딩(상하, 좌우) */
+  margin-bottom: 5px; /* 각 메뉴 아이템 사이 간격 */
+  display: block; /* 블록 형태로 설정 */
+  text-decoration: none; /* 링크에 밑줄 없애기 */
+  color: #333; /* 기본 텍스트 색상 */
+  background-color: #f8f8f8; /* 기본 배경색 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  transition: background-color 0.3s, transform 0.2s; /* 부드러운 배경색 변화 및 약간의 크기 변화 효과 */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* 마우스 오버 시 보임 */
+  opacity: 1; /* 불투명하게 설정 */
+}
+.dropdown-item:hover {
+  background-color: #e0e0e0; /* 호버 시 배경색 변경 */
+  color: #000; /* 호버 시 텍스트 색상 변경 */
+  transform: scale(1.02); /* 호버 시 약간 확대 */
+}
+
+/* 햄버거 메뉴 스타일 */
+.hamburger-menu {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #333;
+  left: 0;
+}
+
+.hamburger-menu::before {
+  top: -9px; /* 첫 번째 선 */
+}
+
+.hamburger-menu::after {
+  top: 9px; /* 세 번째 선 */
+}
+
+.dropdown-title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0; /* 드롭다운 타이틀 배경색 */
+  border-radius: 4px; /* 드롭다운 타이틀 모서리 둥글게 */
+  transition: background-color 0.3s; /* 부드러운 배경색 변화 효과 */
+}
+
+.dropdown-title:hover {
+  background-color: #e0e0e0; /* 드롭다운 타이틀 호버 시 색상 변경 */
+}

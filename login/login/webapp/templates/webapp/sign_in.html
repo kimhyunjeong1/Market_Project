@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../static/images/favicon.png" />
+    <link rel="stylesheet" href="../../static/css/sign_in.css" />
+    <script src="../../static/scripts/index.js"></script>
+    <title>별별마켓</title>
+  </head>
+
+  <body>
+    <div class="sign-in">
+      <div class="header">
+        <div class="header-2">
+          <div class="app-down">
+            <img
+              class="icon-app-download-2"
+              src="../../static/images/icon_app_download.png"
+            />
+            <div class="div">앱다운로드</div>
+          </div>
+          <div class="sign-up">
+            <a href="{% url 'sign_up' %}" class="div2">회원가입</a>
+          </div>
+          <div class="sign-in2">
+            <a href="{% url 'sign_in' %}" class="div2">로그인</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-2">
+          <div class="nav-3">
+            <a href="{% url 'main' %}">
+              <img class="icon-market-1" src="../../static/images/icon_market.svg" />
+            <div class="menu-bar">
+              <div class="sale">
+                <img
+                  class="icon-sale-1"
+                  src="../../static/images/icon-sale.png"
+                />
+                <a href="{% url 'sign_in' %}" class="div3">판매하기</a>
+              </div>
+              <div class="my-shop">
+                <img
+                  class="icon-myshop-1"
+                  src="../../static/images/icon-myshop.png"
+                />
+                <a href="{% url 'sign_in' %}" class="div3">내상점</a>
+              </div>
+              <div class="chat">
+                <img
+                  class="icon-chat-1"
+                  src="../../static/images/icon-chat.png"
+                />
+                <a href="{% url 'sign_in' %}" class="div3">채팅</a>
+              </div>
+            </div>
+            <div class="serach-bar">
+              <div class="div4">상품명 입력</div>
+              <div class="search-frame">
+                <img class="search" src="../../static/images/search.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="nav-4">
+            <div class="categori">
+              <img class="categori-1" src="../../static/images/categori.png" />
+              <div class="div5">카테고리</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <div class="div6">
+          우리동네
+          <br />
+          매물 보기
+        </div>
+        <img class="map2" src="../../static/images/icon_map.svg" />
+      </div>
+      <div class="login-form">
+        <div class="login">
+          <div class="div7">로그인</div>
+        </div>
+        <form action="{% url 'login' %}" method="POST">
+          {% csrf_token %}
+          <div class="id-filed">
+            <input
+              type="text"
+              class="input-id"
+              name="username"
+              placeholder="아이디"
+              required
+            />
+          </div>
+          <div class="pw-filed">
+            <input
+              type="password"
+              class="input-pw"
+              name="password"
+              placeholder="패스워드"
+              required
+            />
+          </div>
+          <button type="submit" class="login-button">
+            <div class="div9">로그인</div>
+          </button>
+        </form>
+        <div class="login-util">
+          <div class="div10">아이디찾기</div>
+          <div class="div11">비밀번호찾기</div>
+          <div class="div12">회원가입</div>
+        </div>
+      </div>
+      <div class="line-1"></div>
+    </div>
+  </body>
+</html>
